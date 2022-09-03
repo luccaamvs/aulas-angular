@@ -1,0 +1,21 @@
+.div1{
+  display: block;
+  background-color: aqua;
+  width: 200px;
+  height: 50px;
+}
+.div2{
+  display: block;
+  background-color: rgb(145, 255, 0);
+  width: 200px;
+  height: 50px;
+}
+.div3{
+  display: block;
+  background-color: rgb(255, 0, 0);
+  width: 200px;
+  height: 50px;
+}
+.apagada{
+  display: none;
+}
