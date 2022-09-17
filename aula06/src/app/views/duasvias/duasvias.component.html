@@ -1,0 +1,43 @@
+<h1>Binding de duas vias</h1>
+
+<h3>Exemplo 1</h3>
+
+<input type="text" [(ngModel)] = "nome" id="">
+
+<br>
+
+{{nome}}
+
+<br>
+
+<button (click)="limparNome()"> Limpa o Nome </button>
+
+<br><br><hr>
+
+<h3>Exemplo 2</h3>
+
+<input type="number" [(ngModel)]="valor1">    <br><br>
+<input type="number" [(ngModel)]="valor2">    <br><br>
+
+  {{soma()}}
+
+<br><br><hr>
+
+<h3>Exemplo 3</h3>
+
+<input type="text" [(ngModel)] = "nome">    <br><br>
+<input type="text" [(ngModel)] = "sobrenome"><br><br>
+
+{{obterNomeCompleto()}}
+
+<br><br><hr>
+
+<h3>Exemplo 4s</h3>
+
+
+<input type="number" [(ngModel)] = "valor1"><br><br>
+<input type="number" [(ngModel)] = "valor2"><br><br>
+
+  <p>{{multiplicacao()}}</p>
+
+{{obterNomeCompleto()}}
