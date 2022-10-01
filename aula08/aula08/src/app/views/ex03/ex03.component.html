@@ -1,0 +1,15 @@
+<h3>Exercicio 03 - Exemplo de ngSwitch</h3>
+
+<div class="cartao">
+  <h4>Caes:</h4>
+
+  <input type="text" [(ngModel)]="cao">
+
+  <div [ngSwitch]="cao">
+    <img *ngSwitchCase=" 'chihuahua' "  src="assets/img/chihuahua.png"  alt="">
+    <img *ngSwitchCase=" 'doberman' "   src="assets/img/doberman.png"   alt="">
+    <img *ngSwitchCase=" 'viralata' "   src="assets/img/viralata.png"   alt="">
+    <img *ngSwitchDefault               src="assets/img/noimage.png"    alt="">
+  </div>
+</div>
+<hr>

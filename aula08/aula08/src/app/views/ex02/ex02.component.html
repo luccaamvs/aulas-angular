@@ -1,0 +1,18 @@
+<h3>Exercicio 02</h3>
+
+<div class="cartao">
+  <h4>Escreva nomes bonitos:</h4>
+
+  <input type="text" placeholder="nome" [(ngModel)]="nome">
+
+  <button (click)="enviar()">Enviar</button>
+
+  <ol>
+    <li *ngFor="let nome of nomes">
+      <p>{{nome}}</p>
+    </li>
+  </ol>
+
+</div>
+
+<hr>

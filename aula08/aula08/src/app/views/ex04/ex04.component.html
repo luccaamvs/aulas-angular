@@ -1,0 +1,23 @@
+<h3>Exercicio 04 - Canais youtube</h3>
+
+<div class="cartao">
+
+  <h4>Acessar Nerdplus: coding ou podcast?</h4>
+  <input type="text" [(ngModel)]="canal"> <br><br>
+
+  <div [ngSwitch]="canal" class="tamanho cartao">
+
+    <div *ngSwitchCase=" 'podcast' ">
+      <img  src="assets/img/podcast.jpg"      alt="podcast">
+      <a    href="https://www.youtube.com/c/NerdPlusOficial/videos"         target="_blank">Acessar!</a>
+    </div >
+    <div *ngSwitchCase=" 'coding' ">
+      <img   src="assets/img/coding.jpg"      alt="lucca">
+      <a     href="https://www.youtube.com/channel/UCfnLZqDh6vlZnWZzfhVtIdQ" target="_blank">Acessar!</a>
+    </div>
+
+    <img *ngSwitchDefault                 src="assets/img/noimage.png"    alt="">
+  </div>
+
+</div>
+<hr>
