@@ -1,0 +1,45 @@
+<h2 class="title">Gestor de Jogos:</h2>
+
+<!-- Create: -->
+<button class="add" (click) = "novoJogo()">Adicionar Jogos</button>
+
+  <table *ngFor="let jogo of jogos; let i = index;" (click) = "selecionarJogo(jogo)">
+    <div class = "box">
+      <button class="remove" (click)="removerJogo(i)">Remover Jogo</button>
+      <tr class="item"> Nome:
+        <td>
+          <span>{{jogo.nome}}</span>
+        </td>
+      </tr>
+      <tr  class="item"> Produtora:
+        <td>
+           {{jogo.produtora}}
+        </td>
+      </tr>
+      <tr  class="item"> Plataforma:
+        <td>
+           {{jogo.plataforma}}
+        </td>
+      </tr>
+      <tr  class="item"> Gênero:
+        <td>
+           {{jogo.genero}}
+        </td>
+      </tr>
+    </div>
+  </table>
+
+  <!-- Update: -->
+  <div *ngIf="jogoSelecionado">
+    <input type="text" [(ngModel)]="jogoSelecionado.nome">
+    <input type="text" [(ngModel)]="jogoSelecionado.plataforma">
+    <input type="text" [(ngModel)]="jogoSelecionado.produtora">
+    <input type="text" [(ngModel)]="jogoSelecionado.genero">
+  </div>
+
+
+
+
+
+
+
