@@ -1,0 +1,26 @@
+<h2>Gerenciar Clientes</h2>
+
+<ul>
+  <li *ngFor="let cliente of clientes">
+    {{cliente.nome}} - {{cliente.cpf}}
+  </li>
+</ul>
+
+<br><br>
+
+<button (click)="novo()"> Novo </button>
+  <br><br>
+
+<div *ngIf="clienteInsercao">
+  <input type="text" placeholder="Nome" [(ngModel)]="clienteInsercao.nome">
+
+  <br><br>
+
+  <input type="text" placeholder="CPF" [(ngModel)]="clienteInsercao.cpf">
+
+  <br><br>
+
+  <button (click)="cancelar()"> Cancelar  </button>
+
+  <button (click)="salvar()">   Salvar    </button>
+</div>

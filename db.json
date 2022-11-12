@@ -1,0 +1,50 @@
+{
+  "posts": [
+    {
+      "author": "Lucca",
+      "title": "alteracao realizada",
+      "id": 4
+    },
+    {
+      "author": "Lucca",
+      "title": "alteracao realizada",
+      "id": 5
+    },
+    {
+      "author": "Lucca",
+      "title": "alteracao realizada",
+      "id": 6
+    },
+    {
+      "author": "Lucca",
+      "title": "alteracao realizada",
+      "id": 7
+    },
+    {
+      "author": "Lucca",
+      "title": "alteracao realizada",
+      "id": 8
+    }
+  ],
+  "cliente": [
+    {
+      "id": 1,
+      "nome": "Lucca",
+      "cpf": "111111111"
+    },
+    {
+      "nome": "Lucca",
+      "cpf": "77777777777",
+      "id": 2
+    },
+    {
+      "nome": "Luhdeujq",
+      "cpf": "ASDFGHJKL",
+      "id": 3
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
