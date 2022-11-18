@@ -28,19 +28,17 @@
   ],
   "cliente": [
     {
-      "id": 1,
-      "nome": "Lucca",
-      "cpf": "111111111"
+      "id": 4
+    },
+    {
+      "nome": "Teste",
+      "cpf": "123",
+      "id": 5
     },
     {
       "nome": "Lucca",
-      "cpf": "77777777777",
-      "id": 2
-    },
-    {
-      "nome": "Luhdeujq",
-      "cpf": "ASDFGHJKL",
-      "id": 3
+      "cpf": "89547",
+      "id": 6
     }
   ],
   "comments": [],
