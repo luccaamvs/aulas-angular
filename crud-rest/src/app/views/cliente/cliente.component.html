@@ -1,9 +1,9 @@
-<h2>Gerenciar Clientes</h2>
-
 <ul>
   <li *ngFor="let cliente of listaClientes">
     <span (click)="selecionar(cliente)">{{cliente.nome}} - {{cliente.cpf}}</span>
-    <span (click)="excluir(cliente.id)">X</span>
+    <span (click)="excluir(cliente.id)">
+    <mat-icon class="mat-18">delete</mat-icon>
+    </span>
   </li>
 </ul>
 

@@ -8,8 +8,9 @@
 </mat-toolbar>
 
 <mat-sidenav-container>
-    <mat-sidenav mode="side" [opened]="true">
+    <mat-sidenav mode="side" #sidenav [opened]="true">
       <mat-list>
+
         <a routerLink="/cliente" mat-list-item>
           Clientes
         </a>
@@ -17,7 +18,10 @@
     </mat-sidenav>
 
     <mat-sidenav-content style="min-height: calc(100vh - 64px);">
+      <mat-card class="mat-elevation-z5 cartao">
       <router-outlet></router-outlet>
+      </mat-card>
+
     </mat-sidenav-content>
 </mat-sidenav-container>
 
